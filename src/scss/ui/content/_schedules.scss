@@ -13,7 +13,7 @@
 	background-repeat: no-repeat;
 	background-position: center, bottom center;
 	color: v.$white;
-
+	background-size: 210rem;
 	@include m.tablet {
 		background-image: linear-gradient(
 				to right,
