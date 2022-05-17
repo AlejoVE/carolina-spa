@@ -1,0 +1,49 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer {
+	&__grid {
+		padding: 5rem 0;
+		@include m.tablet {
+			@include m.grid(3, 2rem);
+		}
+	}
+
+	&__widget {
+		text-align: center;
+
+		&:nth-child(3) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__heading {
+		@include m.heading;
+		font-size: 3.4rem;
+	}
+
+	&__text {
+		line-height: 1.8;
+	}
+}
+
+.copyright {
+	background-color: v.$secondary;
+	&__text {
+		margin: 0;
+		text-align: center;
+		color: v.$white;
+		padding: 2rem;
+		font-size: 1.8rem;
+	}
+
+	&__link {
+		img {
+			margin: 0 auto;
+			padding-bottom: 1rem;
+			width: 7rem;
+		}
+	}
+}
